@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Saper is a text clone of the popular 'minesweeper' game.
 
 %description -l pl
-Tekstowy klon popularnej gry
+Tekstowy klon popularnej gry Saper (Minesweeper).
 
 %prep
 %setup -q -n %{_name}-X.%{ver}
