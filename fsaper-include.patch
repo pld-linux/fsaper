@@ -1,0 +1,73 @@
+diff -urN saper-X.0.12.orig/saper/args.C saper-X.0.12/saper/args.C
+--- saper-X.0.12.orig/saper/args.C	2004-09-07 13:38:05.081440816 +0200
++++ saper-X.0.12/saper/args.C	2004-09-07 13:38:40.298087072 +0200
+@@ -2,8 +2,8 @@
+ 
+ #include <string.h>
+ #include <stdlib.h>
+-#include <ncurses.h>
+-#include <term.h>
++#include <ncurses/ncurses.h>
++#include <ncurses/term.h>
+ #include "classes.h"
+ #include "defines.h"
+ 
+diff -urN saper-X.0.12.orig/saper/boxes.C saper-X.0.12/saper/boxes.C
+--- saper-X.0.12.orig/saper/boxes.C	2004-09-07 13:38:05.082440664 +0200
++++ saper-X.0.12/saper/boxes.C	2004-09-07 13:45:19.767358512 +0200
+@@ -1,6 +1,6 @@
+ /* Boxes.C <-- All functions operating on boxes */
+ 
+-#include <ncurses.h>
++#include <ncurses/ncurses.h>
+ #include "classes.h" 
+ #include "../src/operations.h"
+ #include "defines.h"
+diff -urN saper-X.0.12.orig/saper/classes.h saper-X.0.12/saper/classes.h
+--- saper-X.0.12.orig/saper/classes.h	2004-09-07 13:38:05.081440816 +0200
++++ saper-X.0.12/saper/classes.h	2004-09-07 13:42:45.681783080 +0200
+@@ -1,6 +1,6 @@
+ /* Classes.h */
+ 
+-#include <ncurses.h>
++#include <ncurses/ncurses.h>
+ #include <time.h>
+ 
+ class box_type
+diff -urN saper-X.0.12.orig/saper/defines.h saper-X.0.12/saper/defines.h
+--- saper-X.0.12.orig/saper/defines.h	2004-09-07 13:38:05.081440816 +0200
++++ saper-X.0.12/saper/defines.h	2004-09-07 13:44:00.932343256 +0200
+@@ -1,7 +1,7 @@
+ /* Defines.h */
+ 
+ #include <math.h>
+-#include <ncurses.h>
++#include <ncurses/ncurses.h>
+ 
+ #define VERSION		"X.0.12pre7"
+ #define DATE		"2004 Sep 3"
+diff -urN saper-X.0.12.orig/src/init.C saper-X.0.12/src/init.C
+--- saper-X.0.12.orig/src/init.C	2004-09-07 13:38:05.079441120 +0200
++++ saper-X.0.12/src/init.C	2004-09-07 13:46:39.770196232 +0200
+@@ -1,6 +1,6 @@
+ /* Init.C <-- NCurses initialization. */
+ 
+-#include <ncurses.h>
++#include <ncurses/ncurses.h>
+ #include <time.h>
+ #include <stdlib.h>
+ #include "input.h"
+diff -urN saper-X.0.12.orig/src/input.C saper-X.0.12/src/input.C
+--- saper-X.0.12.orig/src/input.C	2004-09-07 13:38:05.080440968 +0200
++++ saper-X.0.12/src/input.C	2004-09-07 13:48:13.723913096 +0200
+@@ -3,8 +3,8 @@
+ #include <stdio.h>
+ #include <termios.h>
+ #include <unistd.h>
+-#include <term.h>
+-#include <ncurses.h>
++#include <ncurses/term.h>
++#include <ncurses/ncurses.h>
+ 
+ static termios first, current;
+ static int is_pressed = -1;
