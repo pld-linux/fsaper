@@ -13,6 +13,7 @@ Source0:	http://marmarek.w.staszic.waw.pl/~marmarek/saper/pliki/%{_name}-current
 # Source0-md5:	3760183322151ac9dd63a23044e6570d
 Patch0:		%{name}-include.patch
 URL:		http://marmarek.w.staszic.waw.pl/~marmarek/saper/
+BuildRequires:	libstdc++-devel
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
