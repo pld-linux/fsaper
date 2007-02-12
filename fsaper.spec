@@ -3,7 +3,7 @@
 %define		ver	0.12
 
 Summary:	Text mode minesweeper
-Summary(pl):	Saper w trybie tekstowym
+Summary(pl.UTF-8):   Saper w trybie tekstowym
 Name:		fsaper
 Version:	0.12%{rel}
 Release:	1
@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Saper is a text clone of the popular 'minesweeper' game.
 
-%description -l pl
+%description -l pl.UTF-8
 Tekstowy klon popularnej gry Saper (Minesweeper).
 
 %prep
