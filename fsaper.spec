@@ -3,7 +3,7 @@
 %define		ver	0.12
 
 Summary:	Text mode minesweeper
-Summary(pl.UTF-8):   Saper w trybie tekstowym
+Summary(pl.UTF-8):	Saper w trybie tekstowym
 Name:		fsaper
 Version:	0.12%{rel}
 Release:	1
